@@ -20,6 +20,7 @@ using MyPrimerWebApi.Data;
 using MyPrimerWebApi.helpers;
 using MyPrimerWebApi.Models;
 using MyPrimerWebApi.Services;
+using MyPrimerWebApi.Utils;
 
 namespace MyPrimerWebApi
 {
@@ -35,6 +36,8 @@ namespace MyPrimerWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IPrepDb, PrepDb>();
+
             services.AddControllers(options =>
             {
                 options.Filters.Add(new MiFiltroDeException());
@@ -86,7 +89,7 @@ namespace MyPrimerWebApi
             services.AddScoped<IHashService, HashService>();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IPrepDb prepDb)
         {
             if (env.IsDevelopment())
             {
@@ -106,6 +109,7 @@ namespace MyPrimerWebApi
             app.UseCors();
             //Con esto habilitos los CORS a nivel gobal para todos los endpoints
             // app.UseCors(builder => builder.WithOrigins("https://www.apirequest.io").AllowAnyMethod().WithHeaders("*"));// Con el asterisco indico que voy a permitir todas las cabeceras que se manden
+            prepDb.Initialize();
 
             app.UseEndpoints(endpoints =>
             {

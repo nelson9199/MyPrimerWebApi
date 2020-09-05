@@ -58,12 +58,15 @@ namespace Namespace
         }
 
         [HttpGet("hash")]
-        public ActionResult GetHash()
+        public async Task<ActionResult<IdentityRole>> GetHash()
         {
-            string textoPlano = "Nelson Marro";
-            var hasResult1 = hashService.HashData(textoPlano).Hash;
-            var hasResult2 = hashService.HashData(textoPlano).Hash;
-            return Ok(new { textoPlano, hasResult1, hasResult2 });
+            // Hashing Data
+            // string textoPlano = "Nelson Marro";
+            // var hasResult1 = hashService.HashData(textoPlano).Hash;
+            // var hasResult2 = hashService.HashData(textoPlano).Hash;
+            // return Ok(new { textoPlano, hasResult1, hasResult2 });
+            return await roleManager.FindByNameAsync("Admin");
+
         }
 
         [HttpGet("{id}")]
