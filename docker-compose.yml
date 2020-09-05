@@ -3,19 +3,16 @@ services:
   mywebapi:
     image: nelson9199/my-web-api
     build: .
-    environment:
-      DbServer: 'db'
     ports:
       - '8080:80'
     depends_on:
-      - ms-sql-server
-
-  ms-sql-server:
+      - db
+  db:
     image: mcr.microsoft.com/mssql/server:latest
     environment:
       ACCEPT_EULA: 'Y'
       SA_PASSWORD: 'Pa55w0rd2019'
       MSSQL_PID: Express
-    container_name: ms-sql-server
+    container_name: db
     ports:
       - '1433:1433'
