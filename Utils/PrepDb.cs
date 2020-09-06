@@ -3,10 +3,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MyPrimerWebApi.Data;
 using MyPrimerWebApi.Models;
+using Polly;
 
 namespace MyPrimerWebApi.Utils
 {
@@ -22,15 +24,21 @@ namespace MyPrimerWebApi.Utils
             _userManager = userManager;
             _roleManager = roleManager;
         }
-
         public void Initialize()
         {
             try
             {
-                if (_context.Database.GetPendingMigrations().Count() > 0)
-                {
-                    _context.Database.Migrate();
-                }
+                var retry = Policy.Handle<SqlException>()
+                      .WaitAndRetry(new TimeSpan[]
+                      {
+                        TimeSpan.FromSeconds(2),
+                        TimeSpan.FromSeconds(6),
+                        TimeSpan.FromSeconds(12)
+                      });
+
+                retry.Execute(() =>
+                    _context.Database.Migrate());
+
             }
             catch (Exception ex)
             {

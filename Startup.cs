@@ -95,6 +95,7 @@ namespace MyPrimerWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            prepDb.Initialize();
 
             app.UseHttpsRedirection();
 
@@ -106,10 +107,9 @@ namespace MyPrimerWebApi
 
             // app.UseResponseCaching();
 
-            app.UseCors();
+            // app.UseCors();
             //Con esto habilitos los CORS a nivel gobal para todos los endpoints
             // app.UseCors(builder => builder.WithOrigins("https://www.apirequest.io").AllowAnyMethod().WithHeaders("*"));// Con el asterisco indico que voy a permitir todas las cabeceras que se manden
-            prepDb.Initialize();
 
             app.UseEndpoints(endpoints =>
             {

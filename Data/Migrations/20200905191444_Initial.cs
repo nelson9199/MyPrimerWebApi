@@ -187,6 +187,11 @@ namespace MyPrimerWebApi.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "70b19522-8186-41b2-89e1-e87d9bfa5d8d", "66e3cbc0-e781-4d69-83ba-0e8a43691942", "Admin", "Admin" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",

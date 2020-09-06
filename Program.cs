@@ -7,40 +7,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration.AzureKeyVault;
+using Microsoft.AspNetCore;
+
 namespace MyPrimerWebApi
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((env, config) =>
-                {
-                    // aquí colocamos la configuración de proveedores 
-                    var ambiente = env.HostingEnvironment.EnvironmentName;
-                    config.AddJsonFile($"appsettings.{ambiente}.json", optional: true, reloadOnChange: true);
-                    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-                    config.AddEnvironmentVariables();
-
-                    if (args != null)
-                    {
-                        config.AddCommandLine(args);
-                    }
-
-                    var currentConfig = config.Build();
-
-                    // Estas configuraciones se deben guardar fuera del código fuente del App.
-                    //config.AddAzureKeyVault(currentConfig["Vault"],
-                    //    currentConfig["ClientId"],
-                    //    currentConfig["ClientSecret"]);
-                })
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        {
+            return WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+        }
     }
 }

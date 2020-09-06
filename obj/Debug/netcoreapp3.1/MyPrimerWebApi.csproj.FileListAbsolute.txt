@@ -66,7 +66,6 @@ D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\net
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.dll
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.pdb
-D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\MyPrimerWebApi.exe
@@ -216,3 +215,4 @@ D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\net
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.Integration.json

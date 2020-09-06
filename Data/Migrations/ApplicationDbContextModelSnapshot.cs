@@ -44,6 +44,15 @@ namespace MyPrimerWebApi.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "70b19522-8186-41b2-89e1-e87d9bfa5d8d",
+                            ConcurrencyStamp = "66e3cbc0-e781-4d69-83ba-0e8a43691942",
+                            Name = "Admin",
+                            NormalizedName = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

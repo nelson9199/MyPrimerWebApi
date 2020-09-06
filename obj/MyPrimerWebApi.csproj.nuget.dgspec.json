@@ -80,6 +80,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[*, )"
             }
           },
           "imports": [

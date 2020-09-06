@@ -1,18 +1,29 @@
-version: '3.7'
+version: "3.4"
 services:
-  mywebapi:
-    image: nelson9199/my-web-api
-    build: .
+  web_api:
+    container_name: web_api
+    build:
+      context: .
+      dockerfile: containers/api/Dockerfile
+    env_file:
+      - containers/api/api.env
+    networks:
+      - my_network
     ports:
-      - '8080:80'
+      - "8080:80"
     depends_on:
-      - db
+      - db     
   db:
-    image: mcr.microsoft.com/mssql/server:latest
-    environment:
-      ACCEPT_EULA: 'Y'
-      SA_PASSWORD: 'Pa55w0rd2019'
-      MSSQL_PID: Express
+    image: mcr.microsoft.com/mssql/server
     container_name: db
     ports:
-      - '1433:1433'
+      - "1433:1433"
+    env_file:
+      - containers/db/db.env
+    networks:
+      - my_network
+      
+networks:
+  my_network:
+    driver: bridge
+
