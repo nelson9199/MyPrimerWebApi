@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3GZdKQ34UyNRDtq+4CrkOoihZn8qbS/kye/PW6r467zWkahgQc7pbqLpPCWZOGbj4vfr3mi5CzE99k3WKpqSrA==",
+  "dgSpecHash": "/AKnUPNougohsasxnXYnM9IfNMdyFNKCmK7vqxZzdhR7iO5Ro4aGwMXJEx1YxCeun0YPDfJ2PBCN6DjTgm1Deg==",
   "success": true,
   "projectFilePath": "D:\\Data Nelson\\Development\\Curso Api Rest .Net Core\\MyPrimerWebApi\\MyPrimerWebApi.csproj",
   "expectedPackageFiles": [
@@ -65,6 +65,7 @@
     "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.8\\microsoft.rest.clientruntime.2.3.8.nupkg.sha512",
     "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.7\\microsoft.rest.clientruntime.azure.3.3.7.nupkg.sha512",
+    "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.4\\microsoft.visualstudio.web.codegeneration.3.1.4.nupkg.sha512",
     "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.4\\microsoft.visualstudio.web.codegeneration.contracts.3.1.4.nupkg.sha512",
     "C:\\Users\\Nelson\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.4\\microsoft.visualstudio.web.codegeneration.core.3.1.4.nupkg.sha512",

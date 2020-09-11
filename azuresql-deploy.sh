@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set an user login and password for your database
-export user_admin=webapi_srv
-export user_pass=P@ssw0rd
+export user_admin=apinelson
+export user_pass=Nelson_9191
 # The logical server name has to be unique in the system
 export server_name=bibliotecawebapi
 # Set the database name

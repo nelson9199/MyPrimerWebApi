@@ -77,13 +77,17 @@
               "target": "Package",
               "version": "[3.1.7, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
             },
             "Polly": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[7.2.1, )"
             }
           },
           "imports": [

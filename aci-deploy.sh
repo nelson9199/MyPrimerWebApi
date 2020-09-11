@@ -29,7 +29,7 @@ az container create --resource-group ${resource_group} \
 az container create --resource-group ${resource_group} \
                     --location eastus \
                     --name ${api_name} \
-                    --image ${registry_address}/biblioteca_web_api:v1 \
+                    --image ${registry_address}/myprimerwebapi_web_api:latest \
                     --cpu 1 \
                     --memory 1 \
                     --dns-name-label ${api_name} \

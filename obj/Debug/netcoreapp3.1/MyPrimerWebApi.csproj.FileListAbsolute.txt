@@ -62,8 +62,6 @@
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.csprojAssemblyReference.cache
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.AssemblyInfoInputs.cache
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.AssemblyInfo.cs
-D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.csproj.CoreCompileInputs.cache
-D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.dll
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.pdb
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.json
@@ -216,3 +214,8 @@ D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\net
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.Integration.json
+D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.Stage.json
+D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\appsettings.StageAppServices.json
+D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\bin\Debug\netcoreapp3.1\Polly.dll
+D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.csproj.CoreCompileInputs.cache
+D:\Data Nelson\Development\Curso Api Rest .Net Core\MyPrimerWebApi\obj\Debug\netcoreapp3.1\MyPrimerWebApi.MvcApplicationPartsAssemblyInfo.cache
