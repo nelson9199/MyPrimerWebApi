@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyPrimerWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:MyPrimerWebApi.Controllers.v1.AutoresController.Delete(System.Int32)">
+            <summary>
+            Borra un elemento especifico
+            </summary>
+            <param name="id">Id del elemento a borrar</param>
+        </member>
+    </members>
+</doc>
